@@ -1,0 +1,27 @@
+.nav__wrapper {
+  position: fixed;
+  top: 0;
+  background-image: linear-gradient(to bottom,rgba(0,0,0,1), rgba(0,0,0,0));
+  transition: all .3s ease-in-out;
+}
+
+.nav__wrapper:hover { 
+  background-color: white;
+  background-image: none;
+}
+
+.nav__wrapper.nav-up {
+  top: -100px;
+}
+.nav__wrapper.nav-down {
+    background-color: white;
+  background-image: none;
+}
+.nav__links a{
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.nav__wrapper:hover .nav__links a, .nav__wrapper.nav-down .nav__links a {
+  color: black;
+}

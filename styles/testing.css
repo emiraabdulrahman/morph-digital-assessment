@@ -1,0 +1,30 @@
+.feature {
+  display: flex;
+  gap: 80px;
+}
+
+.feature__image {
+  position: sticky;
+  top: 120px;
+  width: 45%;
+}
+
+.feature__image img {
+  width: 100%;
+  border-radius: 24px;
+}
+
+.feature__content {
+  width: 55%;
+}
+
+.item {
+  padding: 40px 0;
+  cursor: pointer;
+  opacity: 0.4;
+  transition: opacity 0.3s;
+}
+
+.item.active {
+  opacity: 1;
+}
