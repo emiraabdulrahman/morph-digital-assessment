@@ -1,8 +1,6 @@
 $(document).ready(function () {
   // INITIALIZE AOS
-  AOS.init({
-    duration: 1000,
-  });
+  AOS.init();
 
   //header scroll bg change
   // Hide header on scroll down
@@ -24,7 +22,10 @@ $(document).ready(function () {
 
   $('#mainNavigation .nav__wrapper').hover((function(){
     $('#mainNavigation .nav__logo a img').attr('src', 'https://www.3ds.com/assets/3ds-navigation/3DS_corporate-logo_blue.svg');
-  }));
+  }),
+  function(){
+        $('#mainNavigation .nav__logo a img').attr('src', 'https://www.3ds.com/assets/3ds-navigation/3DS_corporate-logo_white.svg');
+  });
 
   function hasScrolled() {
     var st = $(this).scrollTop();
