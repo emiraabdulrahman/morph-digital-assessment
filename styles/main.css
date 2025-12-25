@@ -100,7 +100,7 @@ figure img {
   background-color: #005386;
   border: none;
   color: white;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 30px 10px 30px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -144,7 +144,7 @@ footer {
   max-height: 100vh;
   height: 100vh;
   background: url("https://www.3ds.com/assets/invest/2023-08/about-what-is-dassault-systemes-banner.jpg");
-  background-color: white;
+  background-color: #f4f6f8;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

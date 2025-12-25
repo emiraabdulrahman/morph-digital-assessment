@@ -77,9 +77,21 @@
 }
 .x-timeline-item_content-inner {
   padding: 30px;
-  border: 1px solid #005386;
-  background-color: #fff;
+  border: none;
+  background-color: #f4f6f8;
   border-radius: 10px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.x-timeline-item_content-inner .h1 {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.x-timeline-item_content-inner .h5 {
+  color: #005386;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .x-timeline-item_content-inner:hover {
