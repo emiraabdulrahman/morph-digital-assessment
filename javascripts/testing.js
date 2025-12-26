@@ -2,7 +2,7 @@ $(document).ready(function () {
   
   setTimeout(function() {
     $('.promo-popup').addClass('visible');
-  }, 5000);
+  }, 3000);
 
   $('.promo__close-btn').click(function(){
     $('.promo-popup').css('display','none').removeClass('visible');
