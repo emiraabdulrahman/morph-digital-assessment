@@ -1,7 +1,5 @@
 $(document).ready(function () {
-  // INITIALIZE AOS
-  AOS.init();
-
+  
   //header scroll bg change
   // Hide header on scroll down
   var didScroll;
@@ -20,12 +18,20 @@ $(document).ready(function () {
     }
   }, 250);
 
-  $('#mainNavigation .nav__wrapper').hover((function(){
-    $('#mainNavigation .nav__logo a img').attr('src', 'https://www.3ds.com/assets/3ds-navigation/3DS_corporate-logo_blue.svg');
-  }),
-  function(){
-        $('#mainNavigation .nav__logo a img').attr('src', 'https://www.3ds.com/assets/3ds-navigation/3DS_corporate-logo_white.svg');
-  });
+  $("#mainNavigation .nav__wrapper").hover(
+    function () {
+      $("#mainNavigation .nav__logo a img").attr(
+        "src",
+        "https://www.3ds.com/assets/3ds-navigation/3DS_corporate-logo_blue.svg"
+      );
+    },
+    function () {
+      $("#mainNavigation .nav__logo a img").attr(
+        "src",
+        "https://www.3ds.com/assets/3ds-navigation/3DS_corporate-logo_white.svg"
+      );
+    }
+  );
 
   function hasScrolled() {
     var st = $(this).scrollTop();
@@ -39,23 +45,29 @@ $(document).ready(function () {
       $("#mainNavigation .nav__wrapper")
         .removeClass("nav-down")
         .addClass("nav-up");
-      $('#mainNavigation .nav__logo a img').attr('src', 'https://www.3ds.com/assets/3ds-navigation/3DS_corporate-logo_blur.svg');
-
+      $("#mainNavigation .nav__logo a img").attr(
+        "src",
+        "https://www.3ds.com/assets/3ds-navigation/3DS_corporate-logo_blue.svg"
+      );
     } else {
       // Scroll Up
       if (st + $(window).height() < $(document).height()) {
         $("#mainNavigation .nav__wrapper")
           .removeClass("nav-up")
           .addClass("nav-down");
-          $('#mainNavigation .nav__logo a img').attr('src', 'https://www.3ds.com/assets/3ds-navigation/3DS_corporate-logo_blue.svg');
-        
+        $("#mainNavigation .nav__logo a img").attr(
+          "src",
+          "https://www.3ds.com/assets/3ds-navigation/3DS_corporate-logo_blue.svg"
+        );
       }
       if (st < 10) {
         $("#mainNavigation .nav__wrapper")
           .removeClass("nav-up")
           .removeClass("nav-down");
-        $('#mainNavigation .nav__logo a img').attr('src', 'https://www.3ds.com/assets/3ds-navigation/3DS_corporate-logo_white.svg');
-
+        $("#mainNavigation .nav__logo a img").attr(
+          "src",
+          "https://www.3ds.com/assets/3ds-navigation/3DS_corporate-logo_white.svg"
+        );
       }
     }
 
@@ -110,10 +122,9 @@ $(document).ready(function () {
       let clip_circle = gsap.timeline({
         scrollTrigger: {
           trigger: skew,
-          start: "100 center",
-          scrub: 1,
-          ease: "slow",
-          duration: 3,
+          start: "200 center",
+          scrub: 0.5,
+          ease: "ease",
         },
       });
 
