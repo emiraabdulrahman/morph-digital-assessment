@@ -110,10 +110,9 @@ $(document).ready(function () {
       let clip_circle = gsap.timeline({
         scrollTrigger: {
           trigger: skew,
-          start: "100 center",
-          scrub: 1,
-          ease: "slow",
-          duration: 3,
+          start: "120 center",
+          scrub: 0.5,
+          ease: "ease",
         },
       });
 

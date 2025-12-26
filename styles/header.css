@@ -17,11 +17,11 @@
     background-color: white;
   background-image: none;
 }
-.nav__links a{
+.nav__links a, .nav__wrapper i {
   color: white;
   transition: color 0.3s ease;
 }
 
-.nav__wrapper:hover .nav__links a, .nav__wrapper.nav-down .nav__links a {
+.nav__wrapper:hover .nav__links a, .nav__wrapper.nav-down .nav__links a, .nav__wrapper:hover i, .nav__wrapper.nav-down i {
   color: black;
 }
