@@ -280,7 +280,6 @@ footer {
   transform: rotate(0deg);
 }
 
-
 @keyframes show {
   0% {
     transform: translateY(100rem);
@@ -431,7 +430,7 @@ canvas#threeCanvas {
   }
 }
 @media (max-width: 575px) {
- .emotion .text h3 {
+  .emotion .text h3 {
     font-size: 1.5rem;
     padding: 0 1rem;
   }
